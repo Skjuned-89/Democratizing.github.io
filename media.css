@@ -4,6 +4,128 @@
         margin-inline: auto;
         padding: 0px 15px;
     }
+    
+    header nav .logo img:nth-child(1) {
+        display: none;
+    }
+
+    header nav .logo img:nth-child(2) {
+        width: 50px;
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .navButton a {
+        display: none;
+    }
+
+    .heroTopContent .heroInput {
+        width: 80%;
+    }
+
+    .heroSection .container {
+        overflow: hidden;
+    }
+
+    .realEtateSection .container h2 {
+        width: 80%;
+    }
+
+    .realEstateCards .realEstateCard {
+        width: 90%;
+        height: 300px;
+        margin-inline: auto;
+    }
+
+    .howWorksAccordionSection .container {
+        flex-direction: column-reverse;
+        align-items: normal;
+        gap: 50px;
+        padding: 0px 20px;
+    }
+
+    .howWorksAccordionSection .container img {
+        width: 80%;
+    }
+
+    .accordionWrapper {
+        margin-left: 20px;
+        width: 70%;
+    }
+    .investmentCards {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .investmentCards .investmentCard {
+        width: 100%;
+    }
+
+    .fundsSection .container {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .fundsSection .container .fundCard {
+        width: 100%;
+    }
+
+    .fundsSection .container .swiper {
+        width: 100%;
+    }
+
+    .mortgageSolutionSection .mortgageCards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .featuredSection ul {
+        flex-wrap: wrap;
+    }
+
+    .topInfoContent {
+        flex-wrap: wrap;
+        gap: 19px;
+    }
+
+    .bigImg {
+        width: 100%;
+    }
+
+    .bigImg ul li.imgactive {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .bigImg ul li.imgactive .image {
+        width: 160px;
+        height: 120px;
+    }
+
+    .topInfoContent .topRightInfoContent {
+        width: 100%;
+    }
+
+    .buttomInfoContent {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .buttomInfoContent .imageSection {
+        width: 100%;
+    }
 }
 
 @media screen and (width>=576px) {
@@ -43,6 +165,10 @@
 
     .heroSection .container {
         overflow: hidden;
+    }
+    .investmentCards {
+        flex-wrap: wrap;
+        gap: 50px;
     }
 
     .realEtateSection .container h2 {
