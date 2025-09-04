@@ -4,13 +4,13 @@
         margin-inline: auto;
         padding: 0px 15px;
     }
-    
+
     header nav .logo img:nth-child(1) {
         display: none;
     }
 
     header nav .logo img:nth-child(2) {
-        width: 50px;
+        width: 30px;
         display: block;
     }
 
@@ -24,16 +24,33 @@
         font-weight: 600;
         cursor: pointer;
     }
-    .navBtn{
-        width: 160px;
-        height: 40px;
-    }
+
     .navButton a {
         display: none;
     }
 
+    .navBtn {
+        width: 160px;
+        height: 40px;
+    }
+
+    .heroTopContent h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .heroTopContent h2 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
     .heroTopContent .heroInput {
-        width: 80%;
+        width: 90%;
+        height: 50px;
+    }
+
+    .heroInput input {
+        height: 100%;
     }
 
     .heroSection .container {
@@ -46,7 +63,7 @@
 
     .realEstateCards .realEstateCard {
         width: 90%;
-        height: 300px;
+        height: 100%;
         margin-inline: auto;
     }
 
@@ -65,6 +82,7 @@
         margin-left: 20px;
         width: 70%;
     }
+
     .investmentCards {
         flex-wrap: wrap;
         gap: 50px;
@@ -87,6 +105,11 @@
         width: 100%;
     }
 
+    .mortgageSolutionSection .container {
+        height: 100%;
+        padding: 50px 0;
+    }
+
     .mortgageSolutionSection .mortgageCards {
         flex-wrap: wrap;
         justify-content: center;
@@ -94,12 +117,29 @@
     }
 
     .featuredSection ul {
+        width: 100%;
         flex-wrap: wrap;
+    }
+
+    .featuredSection ul li {
+        width: calc(90%/4);
     }
 
     .topInfoContent {
         flex-wrap: wrap;
         gap: 19px;
+    }
+
+    .informationSection .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .informationSection .container .infoButton {
+        align-items: center;
+        width: 70%;
+        flex-direction: column;
     }
 
     .bigImg {
@@ -169,6 +209,7 @@
     .heroSection .container {
         overflow: hidden;
     }
+
     .investmentCards {
         flex-wrap: wrap;
         gap: 50px;
@@ -387,7 +428,7 @@
 
     .bigImg ul li.imgactive .image {
         width: 100%;
-        height:fit-content;
+        height: fit-content;
     }
 
     .topInfoContent .topRightInfoContent {
