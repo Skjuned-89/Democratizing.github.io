@@ -24,7 +24,10 @@
         font-weight: 600;
         cursor: pointer;
     }
-
+    .navBtn{
+        width: 160px;
+        height: 40px;
+    }
     .navButton a {
         display: none;
     }
