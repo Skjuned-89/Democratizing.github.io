@@ -1,0 +1,298 @@
+@media screen and (width<576px) {
+    .container {
+        width: 100%;
+        margin-inline: auto;
+        padding: 0px 15px;
+    }
+}
+
+@media screen and (width>=576px) {
+    .container {
+        width: 100%;
+        margin-inline: auto;
+        padding: 0px 10px;
+    }
+
+    header nav .logo img:nth-child(1) {
+        display: none;
+    }
+
+    header nav .logo img:nth-child(2) {
+        width: 50px;
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .navButton a {
+        display: none;
+    }
+
+    .heroTopContent .heroInput {
+        width: 80%;
+    }
+
+    .heroSection .container {
+        overflow: hidden;
+    }
+
+    .realEtateSection .container h2 {
+        width: 80%;
+    }
+
+    .realEstateCards .realEstateCard {
+        width: 90%;
+        height: 300px;
+        margin-inline: auto;
+    }
+
+    .howWorksAccordionSection .container {
+        flex-direction: column-reverse;
+        align-items: normal;
+        gap: 50px;
+        padding: 0px 20px;
+    }
+
+    .howWorksAccordionSection .container img {
+        width: 80%;
+    }
+
+    .accordionWrapper {
+        margin-left: 20px;
+        width: 70%;
+    }
+
+    .investmentCards .investmentCard {
+        width: 100%;
+    }
+
+    .fundsSection .container {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .fundsSection .container .fundCard {
+        width: 100%;
+    }
+
+    .fundsSection .container .swiper {
+        width: 100%;
+    }
+
+    .mortgageSolutionSection .mortgageCards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .featuredSection ul {
+        flex-wrap: wrap;
+    }
+
+    .topInfoContent {
+        flex-wrap: wrap;
+        gap: 19px;
+    }
+
+    .bigImg {
+        width: 100%;
+    }
+
+    .bigImg ul li.imgactive {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .bigImg ul li.imgactive .image {
+        width: 160px;
+        height: 120px;
+    }
+
+    .topInfoContent .topRightInfoContent {
+        width: 100%;
+    }
+
+    .buttomInfoContent {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .buttomInfoContent .imageSection {
+        width: 100%;
+    }
+}
+
+@media screen and (width>=768px) {
+    .container {
+        width: 768px;
+        margin-inline: auto;
+        padding: 0px 15px;
+    }
+
+    header nav .logo img:nth-child(1) {
+        width: 160px;
+        display: block;
+    }
+
+    header nav .logo img:nth-child(2) {
+        display: none;
+    }
+
+    .realEstateCards .realEstateCard {
+        width: calc(95% / 2);
+        height: 400px;
+    }
+
+    .investmentCards {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .investmentCards .investmentCard {
+        width: 100%;
+        height: 300px;
+    }
+
+}
+
+@media screen and (width>=1024px) {
+    .container {
+        width: 1024px;
+        margin-inline: auto;
+        padding: 0px 20px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navButton a {
+        display: block;
+    }
+
+    .heroTopContent .heroInput {
+        width: 55%;
+    }
+
+    .realEtateSection .container h2 {
+        width: 55%;
+    }
+
+    .realEstateCards .realEstateCard {
+        width: calc(95% / 2);
+        height: 350px;
+    }
+
+    .howWorksAccordionSection .container {
+        flex-direction: row;
+        align-items: center;
+        gap: 0px;
+        padding: 0px;
+    }
+
+    .howWorksAccordionSection .container img {
+        width: 50%;
+    }
+
+    .accordionWrapper {
+        margin-left: 0px;
+        width: 40%;
+    }
+
+    .investmentCards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .investmentCards .investmentCard {
+        width: 31%;
+        height: 400px;
+    }
+
+    .fundsSection .container {
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .fundsSection .container .fundCard {
+        width: 24%;
+    }
+
+    .fundsSection .container .swiper {
+        width: 74%;
+    }
+
+    .mortgageSolutionSection .mortgageCards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0px;
+    }
+
+    .topInfoContent {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .bigImg {
+        width: 49%;
+    }
+
+    .bigImg ul li.imgactive {
+        height: 100%;
+        display: block;
+    }
+
+    .bigImg ul li.imgactive .image {
+        width: 100%;
+        height:fit-content;
+    }
+
+    .topInfoContent .topRightInfoContent {
+        width: 49%;
+    }
+
+    .buttomInfoContent {
+        width: 100%;
+        flex-wrap: nowrap;
+        gap: 0px;
+    }
+
+    .buttomInfoContent .imageSection {
+        width: 49%;
+    }
+
+}
+
+@media screen and (width>=1200px) {
+    .container {
+        width: 1200px;
+        margin-inline: auto;
+        padding: 0px 50px;
+    }
+
+    .realEstateCards .realEstateCard {
+        width: calc(95% / 4);
+        height: 450px;
+    }
+}
+
+@media screen and (width>=1400px) {
+    .container {
+        width: 1400px;
+        margin-inline: auto;
+    }
+}
