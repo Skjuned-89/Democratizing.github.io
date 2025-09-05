@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playball&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
-
 li {
     list-style-type: none;
 }
-
 a {
     text-decoration: none;
     color: unset;
 }
-
 .smooth {
     transition: all .5s ease;
 }
-
 header {
     width: 100%;
     position: sticky;
@@ -27,20 +22,17 @@ header {
     background-color: white;
     z-index: 100;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
 }
-
 nav ul {
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-
 nav ul li {
     cursor: pointer;
     font-size: 17px;
@@ -50,31 +42,25 @@ nav ul li {
     padding: 10px;
     gap: 3px;
 }
-
 nav ul li i {
     font-size: 10px;
 }
-
 nav .logo img:nth-child(1) {
     width: 160px;
 }
-
 nav .logo img:nth-child(2) {
     display: none;
 }
-
 nav .navButton {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-
 .navButton a {
     font-size: 16px;
     font-weight: 600;
 }
-
 .navBtn {
     width: 160px;
     height: 50px;
@@ -82,17 +68,14 @@ nav .navButton {
     overflow: hidden;
     border: 1px solid #0051AD;
 }
-
 .buttonCard {
     width: 100%;
     height: 100%;
     transition: transform .5s ease;
 }
-
 .navBtn:hover .buttonCard {
     transform: translateY(-100%);
 }
-
 .button1,
 .button2 {
     width: 100%;
@@ -103,17 +86,14 @@ nav .navButton {
     align-items: center;
     cursor: pointer;
 }
-
 .button1 {
     background-color: white;
     color: #0051AD;
 }
-
 .button2 {
     background-color: black;
     color: white;
 }
-
 header .headerCards {
     width: 100%;
     min-height: 60dvh;
@@ -125,14 +105,12 @@ header .headerCards {
     z-index: 100;
     background-color: #fff;
 }
-
 header .headerCards .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
-
 .headCard {
     width: calc(100% / 3);
     display: flex;
@@ -141,11 +119,9 @@ header .headerCards .container {
     height: 100%;
     width: 100%;
 }
-
 .headCard:nth-child(1) {
     border-right: 1px solid #c2d7ef;
 }
-
 .headCard .imgCard {
     width: 80%;
     border: 1px solid #c2d7ef;
@@ -157,58 +133,48 @@ header .headerCards .container {
     align-items: center;
     gap: 10px;
 }
-
 .imgCard:hover {
     background-color: #F1F5F9;
 }
-
 .imgCard p {
     text-align: center;
     font-size: 13px;
     line-height: 18px;
     color: #525252;
 }
-
 .imgCard h4,
 .imgCard a {
     font-size: 15px;
     font-weight: 700;
     line-height: 23px;
 }
-
 .headCard .imgCard a {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #0b68d0;
 }
-
 .headCard .imgCard a h4 {
     text-decoration: underline;
 }
-
 .headCard .imgCard a i {
     text-decoration: none;
     visibility: hidden;
     transform: translateX(-8px);
     font-size: 12px;
 }
-
 .headCard .imgCard:hover a i {
     visibility: visible;
     transform: translateX(0px);
     transition: transform .5s ease;
 }
-
 .headCard:nth-child(2),
 .headCard:nth-child(3) {
     padding: 20px 0;
 }
-
 .headCardLists {
     width: 95%;
 }
-
 .headCardLists h4 {
     font-size: 15px;
     font-weight: 700;
@@ -217,7 +183,6 @@ header .headerCards .container {
     border-bottom: 1px solid #c2d7ef;
     margin-bottom: 5px;
 }
-
 .headCardLists ul li {
     padding: 10px 15px;
     border-radius: 10px;
@@ -226,16 +191,13 @@ header .headerCards .container {
     line-height: 23px;
     color: #525252;
 }
-
 .headCardLists ul li:hover {
     background-color: #EAEAEA;
 }
-
 .heroSection {
     width: 100%;
     position: relative;
 }
-
 .heroSection .heroBackground {
     width: 100%;
     height: 100%;
@@ -244,20 +206,17 @@ header .headerCards .container {
     left: 0;
     z-index: -1;
 }
-
 .heroBackground .bgColor {
     width: 100%;
     height: 100%;
     background-color: #E0EBF5;
 }
-
 .heroBackground img {
     width: 100%;
     background-color: #E0EBF5;
     position: absolute;
     bottom: 0;
 }
-
 .heroSection .container {
     padding: 100px 0;
     display: flex;
@@ -265,7 +224,6 @@ header .headerCards .container {
     align-items: center;
     flex-direction: column;
 }
-
 .heroTopContent {
     display: flex;
     justify-content: center;
@@ -273,21 +231,18 @@ header .headerCards .container {
     flex-direction: column;
     gap: 10px;
 }
-
 .heroTopContent h1 {
     font-size: 48px;
     line-height: 48px;
     font-weight: 700;
     text-align: center;
 }
-
 .heroTopContent h2 {
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
     text-align: center;
 }
-
 .heroTopContent p {
     width: 60%;
     font-size: 17px;
@@ -296,33 +251,29 @@ header .headerCards .container {
     color: #7b7b7b;
     text-align: center;
 }
-
 .heroTopContent .heroInput {
     display: flex;
     position: relative;
     margin-top: 20px;
+    height: 75px;
 }
-
 .heroInput input {
     width: 100%;
-    height: 75px;
+    height: 100%;
     border-radius: 200px;
     padding-left: 30px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     outline: none;
     border: 1px solid black;
 }
-
 .heroInput input:focus {
     border: 1px solid #0b68d0;
     box-shadow: 0px 0px 2px 0px #0b68d0;
 }
-
 .heroInput input::placeholder {
     font-size: 16px;
     font-weight: 700;
 }
-
 .heroInput .heroInputButton {
     width: 35%;
     height: 100%;
@@ -332,20 +283,16 @@ header .headerCards .container {
     top: 0;
     right: 0%;
 }
-
 .heroInputButton .buttonCard {
     font-size: 18px;
 }
-
 .heroInputButton:hover .buttonCard {
     transform: translateY(-100%);
 }
-
 .heroInputButton .button1 {
     background-color: #0051AD;
     color: white;
 }
-
 .star {
     display: flex;
     justify-content: center;
@@ -355,13 +302,11 @@ header .headerCards .container {
     font-size: 17px;
     margin-top: 10px;
 }
-
 .star ul {
     display: flex;
     gap: 5px;
     color: #417F34;
 }
-
 .heroCards {
     width: 400px;
     height: 450px;
@@ -371,7 +316,6 @@ header .headerCards .container {
     justify-content: center;
     align-items: center;
 }
-
 .heroCard {
     width: 100%;
     height: 100%;
@@ -384,30 +328,25 @@ header .headerCards .container {
     border-radius: 20px;
     background-color: #fff;
 }
-
 .heroLeft {
     z-index: 2;
     transform: translateX(-200px) scale(.9);
     opacity: .6;
 }
-
 .heroRight {
     z-index: 2;
     transform: translateX(200px) scale(.9);
     opacity: .6;
 }
-
 .heroCenter {
     z-index: 3;
     transform: scale(1);
 }
-
 .heroBack {
     z-index: 1;
     transform: translateY(-60px) scale(.9);
     opacity: .4;
 }
-
 .heroBtn {
     width: 100%;
     display: flex;
@@ -417,26 +356,22 @@ header .headerCards .container {
     position: absolute;
     top: 100%;
 }
-
 .heroBtn i {
     font-size: 20px;
     font-weight: 600;
     color: black;
 }
-
 .heroCard img {
     width: 100%;
     height: 50%;
     border-radius: 10px;
 }
-
 .heroCard h4 {
     font-size: 20px;
     line-height: 22px;
     margin: 05px 0;
     padding-left: 10px;
 }
-
 .heroCard ul {
     width: 100%;
     display: flex;
@@ -446,32 +381,26 @@ header .headerCards .container {
     row-gap: 10px;
     padding: 20px 0;
 }
-
 .heroCard ul li {
     width: 45%;
     display: flex;
     align-items: flex-start;
     gap: 10px;
 }
-
 .heroCard ul li img {
     width: 30px;
     height: 30px;
     border-radius: 0;
 }
-
 .heroCard ul li p {
     font-size: 15px;
     font-weight: 400;
     color: #7b7b7b;
 }
-
-
 .realEtateSection {
     width: 100%;
     margin-top: 100px;
 }
-
 .realEtateSection .container {
     padding: 100px 0;
     display: flex;
@@ -480,14 +409,12 @@ header .headerCards .container {
     flex-direction: column;
     gap: 80px;
 }
-
 .realEtateSection .container h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 50px;
 }
-
 .realEtateSection .container .realEstateCards {
     width: 100%;
     display: flex;
@@ -496,7 +423,6 @@ header .headerCards .container {
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .realEstateCards .realEstateCard {
     width: calc(95% / 4);
     height: 450px;
@@ -509,7 +435,6 @@ header .headerCards .container {
     transition: background-color 0.5s ease;
     box-shadow: 0px 5px 10px -3px #ccc;
 }
-
 .realEstateCard img {
     width: 70px;
     height: 70px;
@@ -517,67 +442,56 @@ header .headerCards .container {
     border-radius: 25px;
     background-color: #F3F4F6;
 }
-
 .realEstateCard h3 {
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
     color: #191919;
 }
-
 .realEstateCard p {
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
     color: #525252;
 }
-
 .realEstateCard a {
     display: flex;
     align-items: center;
     color: #0b68d0;
 }
-
 .realEstateCard a h4 {
     font-size: 16px;
     line-height: 28px;
     font-weight: 700;
     text-decoration: underline;
 }
-
 .realEstateCard a i {
     transform: translateX(-8px);
     visibility: hidden;
     transition: transform 0.5s ease;
 }
-
 .realEstateCard:hover a i {
     visibility: visible;
     transform: translateX(0px);
     transition: transform 0.5s ease;
 }
-
 .realEstateCard:hover {
     background-color: #F3F4F6;
     transition: background-color 0.5s ease;
 }
-
 .realEstateCard:hover img {
     background-color: #ffffff;
 }
-
 .howWorksAccordionSection {
     width: 100%;
     background-color: #F4F7F9;
     padding: 50px 0;
 }
-
 .howWorksAccordionSection .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .howWorksAccordionSection h1.container {
     font-size: 36px;
     font-weight: 700;
@@ -585,19 +499,15 @@ header .headerCards .container {
     color: #191919;
     margin-bottom: 50px;
 }
-
 .accordionWrapper {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-
-
 .accordionItem {
     position: relative;
 }
-
 .accordionLine {
     position: absolute;
     top: 0;
@@ -606,7 +516,6 @@ header .headerCards .container {
     height: 100%;
     background-color: #d5d5d5;
 }
-
 .accordionNumber {
     width: 50px;
     height: 50px;
@@ -619,8 +528,8 @@ header .headerCards .container {
     z-index: 5;
     cursor: pointer;
 }
-
 .accordionTital {
+    width: fit-content;
     position: relative;
     top: -40px;
     left: 70px;
@@ -630,7 +539,6 @@ header .headerCards .container {
     color: #4d4d4d;
     cursor: pointer;
 }
-
 .accordionContent {
     display: none;
     width: 80%;
@@ -642,30 +550,24 @@ header .headerCards .container {
     font-weight: 400;
     color: #7b7b7b;
 }
-
 .accordionItem.active .accordionLine {
     background: #0b68d0;
 }
-
 .accordionItem.active .accordionNumber {
     background-color: #0b68d0;
     color: white;
 }
-
 .accordionItem.active .accordionTital {
     color: #0b68d0;
 }
-
 .accordionItem.active .accordionContent {
     display: block;
 }
-
 .accordionWrapper .accordionLowerContent p {
     font-size: 17px;
     line-height: 27px;
     width: 90%;
 }
-
 .accordionButton {
     width: 220px;
     height: 60px;
@@ -673,39 +575,33 @@ header .headerCards .container {
     border-radius: 50px;
     margin-top: 25px;
 }
-
 .accordionButton:hover .buttonCard {
     transform: translateY(-100%);
 }
-
 .accordionButton .buttonCard .button1 {
     background-color: #0b68d0;
     color: white;
 }
-
 .howWorksAccordionSection .container img {
     width: 50%;
     border-radius: 25px;
 }
-
 .investmentSection {
     padding: 100px 0;
     width: 100%;
 }
-
 .investmentSection .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .investmentSection .container h1 {
     font-size: 36px;
     font-weight: 700;
     color: #191919;
+    text-align: center;
 }
-
 .investmentCards {
     width: 100%;
     display: flex;
@@ -713,7 +609,6 @@ header .headerCards .container {
     align-items: center;
     margin-top: 50px;
 }
-
 .investmentCards .investmentCard {
     width: 31%;
     height: 400px;
@@ -726,13 +621,10 @@ header .headerCards .container {
     gap: 20px;
     border-radius: 15px;
     box-shadow: 0px 5px 10px 1px #ccc;
-
 }
-
 .investmentCard img {
     height: 115px;
 }
-
 .investmentCard h3 {
     width: 70%;
     text-align: center;
@@ -740,19 +632,16 @@ header .headerCards .container {
     line-height: 30px;
     color: #191919;
 }
-
 .investmentCard p {
     width: 80%;
     text-align: center;
     line-height: 28px;
     color: #525252;
 }
-
 .fundsSection {
     width: 100%;
     padding: 50px 0 150px 0;
 }
-
 .fundsSection .container {
     display: flex;
     justify-content: space-between;
@@ -760,7 +649,6 @@ header .headerCards .container {
     position: relative;
     padding: 0;
 }
-
 .swiper {
     width: 74%;
     height: 100%;
@@ -770,7 +658,6 @@ header .headerCards .container {
     width: 100%;
     transition-timing-function: linear !important;
 }
-
 .swiper-slide {
     font-size: 18px;
     background: #fff;
@@ -781,13 +668,11 @@ header .headerCards .container {
     flex-direction: column;
     position: relative;
 }
-
 .swiper-slide img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
-
 .swiper-slide .slideContent {
     width: 100%;
     height: 30%;
@@ -797,22 +682,18 @@ header .headerCards .container {
     justify-content: space-between;
     gap: 8px;
 }
-
 .slideContent h2 {
     font-size: 24px;
     font-weight: 700;
 }
-
 .slideContent .place {
     font-size: 18px;
     color: #374151;
 }
-
 .slideContent .type {
     font-size: 14px;
     color: #6b7280;
 }
-
 .financialMeritSticker {
     position: absolute;
     top: 15px;
@@ -823,7 +704,6 @@ header .headerCards .container {
     color: white;
     font-size: 20px;
 }
-
 .navigation {
     position: absolute;
     bottom: -60px;
@@ -832,7 +712,6 @@ header .headerCards .container {
     display: flex;
     gap: 10px;
 }
-
 .navigation .prev,
 .navigation .next {
     padding: 8px;
@@ -840,7 +719,6 @@ header .headerCards .container {
     background-color: white;
     border: 1px solid #7b7b7b;
 }
-
 .fundsSection .container .fundCard {
     width: 24%;
     background-color: #F3F4F6;
@@ -850,7 +728,6 @@ header .headerCards .container {
     flex-direction: column;
     gap: 20px;
 }
-
 .fundCard h2 {
     font-size: 24px;
     line-height: 36px;
@@ -858,7 +735,6 @@ header .headerCards .container {
     font-weight: 700;
     text-align: center;
 }
-
 .fundCard p {
     font-size: 16px;
     line-height: 24px;
@@ -866,7 +742,6 @@ header .headerCards .container {
     color: #4b5563;
     text-align: center;
 }
-
 .fundCardButton {
     width: 150px;
     height: 60px;
@@ -874,40 +749,35 @@ header .headerCards .container {
     border-radius: 50px;
     margin: auto;
 }
-
 .fundCardButton:hover .buttonCard {
     transform: translateY(-100%);
 }
-
 .fundCardButton .buttonCard .button1 {
     background-color: #0b68d0;
     color: white;
 }
-
 .mortgageSolutionSection {
     width: 100%;
     background-color: #F4F7F9;
     padding: 50px 0 30px 0;
 }
-
 .mortgageSolutionSection .container {
     position: relative;
-    height: 400px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     z-index: 50;
     cursor: pointer;
+    padding: 50px 0;
+    gap: 40px;
 }
-
 .mortgageSolutionSection .container h1 {
     font-size: 36px;
     color: white;
     line-height: 45px;
     text-align: center;
 }
-
 .mortgageSolutionSection .container::before {
     content: "";
     position: absolute;
@@ -921,78 +791,65 @@ header .headerCards .container {
     background-size: cover;
     border-radius: 20px;
 }
-
 .mortgageSolutionSection .mortgageCards {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-
 .mortgageCards .mortgageCard {
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: 40px;
 }
-
 .mortgageCard .name,
 .mortgageCard .type {
     font-size: 13px;
     font-weight: 700;
     color: #525252;
 }
-
 .mortgageCard .type {
     font-weight: 900;
     color: #00d084;
 }
-
 .mortgageSolutionSection .mortgageButton {
     height: 60px;
     width: 300px;
     overflow: hidden;
     border-radius: 100px;
 }
-
 .mortgageSolutionSection .mortgageButton:hover .buttonCard {
     transform: translateY(-100%);
 }
-
 .mortgageButton .buttonCard .button1 {
     color: black;
 }
-
 .clientSaySection {
     width: 100%;
     overflow: hidden;
     background-color: #F4F7F9;
 }
-
 .clientTop {
     padding: 80px 0;
 }
-
 .clientTop h1 {
     text-align: center;
     font-size: 36px;
     line-height: 36px;
     color: #191919;
 }
-
 .clientMain .swiper1,
 .clientMain .swiper2 {
     max-width: 1200px;
     overflow: hidden;
     margin-bottom: 50px;
 }
-
 .swiper1 .swiper-wrapper,
 .swiper2 .swiper-wrapper {
     width: 100%;
     display: flex;
     transition-timing-function: linear !important;
 }
-
 .swiper1 .swiper-slide,
 .swiper2 .swiper-slide {
     font-size: 18px;
@@ -1002,7 +859,6 @@ header .headerCards .container {
     height: 250px;
     width: 500px;
 }
-
 .swiper1 .swiper-slide:not(:has(img)),
 .swiper2 .swiper-slide:not(:has(img)) {
     padding: 20px 30px;
@@ -1011,14 +867,12 @@ header .headerCards .container {
     gap: 10px;
     direction: ltr;
 }
-
 .swiper1 .swiper-slide img,
 .swiper2 .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .swiper1 .swiper-slide strong,
 .swiper2 .swiper-slide strong {
     font-size: 20px;
@@ -1028,7 +882,6 @@ header .headerCards .container {
     display: flex;
     flex-direction: column;
 }
-
 .swiper1 .swiper-slide p,
 .swiper1 .swiper-slide span,
 .swiper2 .swiper-slide p,
@@ -1038,12 +891,10 @@ header .headerCards .container {
     line-height: 27px;
     color: #7b7b7b;
 }
-
 .clientButtom {
     padding: 30px 0 50px 0;
     width: 100%;
 }
-
 .clientButtom h2 {
     font-size: 24px;
     font-weight: 700;
@@ -1052,7 +903,6 @@ header .headerCards .container {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .clientButtom .clientButton {
     width: 300px;
     height: 60px;
@@ -1060,21 +910,17 @@ header .headerCards .container {
     border-radius: 50px;
     margin-inline: auto;
 }
-
 .clientButtom .clientButton .button1 {
     background-color: #0b68d0;
     color: white;
 }
-
 .clientButtom .clientButton:hover .buttonCard {
     transform: translateY(-100%);
 }
-
 .featuredSection {
     width: 100%;
     padding: 50px 0;
 }
-
 .featuredSection h2 {
     font-size: 36px;
     font-weight: 700;
@@ -1082,18 +928,15 @@ header .headerCards .container {
     text-align: center;
     margin-bottom: 50px;
 }
-
 .featuredSection ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
-
 .featuredSection ul li {
     width: calc(80% / 7);
 }
-
 .featuredSection ul li img {
     width: 100%;
     height: 50px;
@@ -1102,11 +945,9 @@ header .headerCards .container {
     mix-blend-mode: color-burn;
     cursor: pointer;
 }
-
 .featuredSection ul li img:hover {
     filter: contrast(0.5);
 }
-
 .buildWealthSection {
     width: 100%;
     padding: 100px 0;
@@ -1115,13 +956,11 @@ header .headerCards .container {
     background-size: cover;
     background-position: center 20%;
 }
-
 .buildWealthSection .container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .buildWealthSection h2,
 .buildWealthSection p {
     font-size: 36px;
@@ -1130,12 +969,10 @@ header .headerCards .container {
     color: white;
     text-align: center;
 }
-
 .buildWealthSection p {
     font-size: 16px;
     margin-bottom: 30px;
 }
-
 .buildWealthSection .buildButton {
     width: 150px;
     height: 60px;
@@ -1143,27 +980,22 @@ header .headerCards .container {
     border-radius: 50px;
     margin-inline: auto;
 }
-
 .buildWealthSection .buildButton:hover .buttonCard {
     transform: translateY(-100%);
 }
-
 .buildWealthSection .star {
     color: white;
 }
-
 .buildWealthSection .star ul li i {
     color: white;
     font-size: 15px;
 }
-
 .informationSection {
     width: 100%;
     padding: 100px 0;
     background-color: #F4F7F9;
     position: relative;
 }
-
 .informationSection h1 {
     font-size: 36px;
     font-weight: 700;
@@ -1172,14 +1004,12 @@ header .headerCards .container {
     text-align: center;
     margin-bottom: 50px;
 }
-
 .informationSection .container .infoButton {
     width: 100%;
     padding-top: 50px;
     display: flex;
     justify-content: center;
 }
-
 .infoButton button {
     padding: 20px 30px;
     font-size: 17px;
@@ -1191,19 +1021,16 @@ header .headerCards .container {
     position: relative;
     z-index: 20;
 }
-
 .infoButton button.infoBtnDeactivate {
     border: none;
     font-weight: 700;
 }
-
 .infoButton button.infoBtnActive {
     border-left: 3px solid #E4E4E7;
     border-right: 3px solid #E4E4E7;
     font-weight: 900;
     border-radius: 5px 5px 0 0;
 }
-
 .infoButton button.infoBtnActive .blueTop {
     width: 100%;
     height: 5px;
@@ -1212,7 +1039,6 @@ header .headerCards .container {
     inset: 0;
     border-radius: 10px 10px 0 0;
 }
-
 .infoButton button.infoBtnActive .buttomRemove {
     width: 100%;
     height: 5px;
@@ -1222,34 +1048,28 @@ header .headerCards .container {
     background-color: #F4F7F9;
     z-index: 10;
 }
-
 .bar {
     width: 100%;
     height: 2px;
     background-color: #E4E4E7;
     margin-bottom: 50px;
 }
-
 .imgactive {
     display: flex;
     flex-direction: column;
 }
-
 .imginactive {
     display: none;
 }
-
 .topInfoContent {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
 }
-
 .bigImg {
     width: 49%;
 }
-
 .bigImg ul li.imgactive {
     width: 100%;
     padding: 15px;
@@ -1257,35 +1077,30 @@ header .headerCards .container {
     border-radius: 20px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-
 .bigImg ul li.imgactive .image {
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
 }
-
 .bigImg ul li.imgactive .image img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: all .3s ease;
 }
-
 .bigImg ul li .links {
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 .topInfoContent .topRightInfoContent {
     width: 49%;
 }
-
 .topRightInfoContent .similarImg {
     width: 100%;
     margin-bottom: 20px;
 }
-
 .similarImg ul li.imgactive {
     width: 100%;
     display: flex;
@@ -1296,48 +1111,41 @@ header .headerCards .container {
     padding: 15px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-
 .similarImg ul li .image {
     width: 160px;
     height: 120px;
     border-radius: 20px;
     overflow: hidden;
 }
-
 .similarImg ul li .image img {
     width: 100%;
     height: 100%;
     transition: all .3s ease;
     object-fit: cover;
 }
-
 .similarImg ul li img:hover,
 .bigImg ul li .image img:hover {
     transform: scale(1.1);
     transition: all .3s ease;
 }
-
 .similarImg ul li.imgactive .links {
     width: calc(100% - 160px);
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 .links a:nth-child(1) {
     font-size: 15px;
     line-height: 23px;
     color: #525252;
     text-decoration: underline;
 }
-
 .links a:nth-child(2) {
     font-size: 20px;
     line-height: 30px;
     color: #191919;
     font-weight: 700;
 }
-
 .links a:nth-child(3) {
     font-size: 17px;
     line-height: 28px;
@@ -1345,17 +1153,14 @@ header .headerCards .container {
     color: #0b68d0;
     text-decoration: underline;
 }
-
 .buttomInfoContent {
     display: flex;
     justify-content: space-between;
 }
-
 .buttomInfoContent .imageSection {
     width: 49%;
     height: 100%;
 }
-
 .buttomInfoContent .similarImg ul li.imgactive {
     height: 200px;
 }
