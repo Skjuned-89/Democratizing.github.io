@@ -7,12 +7,12 @@ var swiper = new Swiper(".mySwiper", {
     delay: 0,                
     disableOnInteraction: false,
   },
-  freeMode: true,           
+  freeMode: false,           
   freeModeMomentum: false,     
   allowTouchMove: false,     
   breakpoints: {
     0: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     1024: {
       slidesPerView: 3,
@@ -29,7 +29,7 @@ function applySwiper(className){
       delay: 0,                
       disableOnInteraction: false,
     },
-    freeMode: true,           
+    freeMode: false,           
     freeModeMomentum: false,     
     allowTouchMove: false,     
   });
