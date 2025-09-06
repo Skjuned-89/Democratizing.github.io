@@ -1,3 +1,9 @@
+@media screen and (width<400px){
+    .heroSection .heroCards {
+        width: 80%;
+        height: 400px;
+    }
+} 
 @media screen and (width<576px) {
     .container {
         width: 100%;
@@ -35,15 +41,37 @@
         font-size: 28px;
         line-height: 42px;
     }
+    .heroCards {
+        width: 400px;
+        height: 400px;
+    }
+    .heroCard ul li img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .heroCard ul li p {
+        font-size: 12px;
+    }
     .heroTopContent .heroInput {
-        width: 90%;
+        width: 100%;
         height: 50px;
     }
     .heroInput input {
         height: 100%;
     }
+    .heroInput input::placeholder{
+        font-size: 13px;
+    }
+    .heroInput .heroInputButton{
+        width:40%;
+    }
     .heroSection .container {
         overflow: hidden;
+    }
+    .heroInputButton .button1,
+    .heroInputButton .button2{
+        font-size: 15px;
     }
     .realEtateSection .container h2 {
         width: 80%;
@@ -68,12 +96,17 @@
         margin-left: 0px;
         width: 90%;
     }
+    .accordionTital{
+        left: 60px;
+        width: fit-content;
+    }
     .investmentCards {
         flex-wrap: wrap;
         gap: 50px;
     }
     .investmentCards .investmentCard {
         width: 100%;
+        height: 100%;
     }
     .investmentSection .container h1 {
         font-size: 28px;
@@ -97,6 +130,14 @@
         height: 100%;
         padding: 50px 0;
     }
+    .mortgageCards .mortgageCard {
+        text-align: center;
+    }
+    .mortgageSolutionSection .mortgageButton{
+        width: 80%;
+        text-align: center;
+        height: 3rem;
+    }
     .mortgageSolutionSection .container h1 {
         font-size: 20px;
         line-height: 30px;
@@ -113,9 +154,20 @@
     .featuredSection ul li {
         width: calc(90%/4);
     }
+    .buildWealthSection h2{
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .buildWealthSection p {
+        font-size: 16px;
+        line-height: 18px;
+    }
     .topInfoContent {
         flex-wrap: wrap;
         gap: 19px;
+    }
+    .informationSection h1{
+        font-size: 28px;
     }
     .informationSection .container {
         display: flex;
@@ -140,9 +192,9 @@
         flex-direction: row;
         gap: 15px;
     }
-    .bigImg ul li.imgactive .image {
-        width: 160px;
-        height: 120px;
+    .bigImg ul li.imgactive .image,.imageSection ul li.imgactive .image {
+        width: 40%;
+        height: 40%;
     }
     .topInfoContent .topRightInfoContent {
         width: 100%;
@@ -158,9 +210,12 @@
         font-size: 13px;
         line-height: 18px;
     }
-    .bigImg ul li .links{
-        width: calc(100% - 160px);
+    .bigImg ul li .links,.imgSection ul li .links{
+        width:60%;
     }
+    .buttomInfoContent .similarImg ul li.imgactive{
+        height: 100%;
+    } 
 }
 @media screen and (width>=576px) {
     .container {
