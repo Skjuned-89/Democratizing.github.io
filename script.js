@@ -1,31 +1,3 @@
-let cards = document.querySelectorAll(".headerCards")
-let navLi = document.querySelectorAll(".list")
-navLi.forEach((list, listIndex) => {
-  list.addEventListener("mouseenter", () => {
-    cards.forEach((card) => {
-      if (list.classList.contains(`navLi${listIndex + 1}`) == card.classList.contains(`navLi${listIndex + 1}`)) {
-        card.style.display = "flex"
-      }
-    })
-  })
-  list.addEventListener("mouseleave", () => {
-    cards.forEach((card) => {
-      setTimeout(() => {
-        if (!card.matches(":hover") && !list.matches(":hover")) {
-          card.style.display = "none";
-        }
-      }, 100);
-      card.addEventListener("mouseenter", () => {
-        card.style.display = "flex";
-      });
-      card.addEventListener("mouseleave", () => {
-        if (!list.matches(":hover")) {
-          card.style.display = "none";
-        }
-      });
-    })
-  })
-})
 let heroCards = document.querySelectorAll(".heroCards .heroCard")
 const order = ["heroLeft", "heroCenter", "heroRight", "heroBack"]
 function setOrder(order) {
