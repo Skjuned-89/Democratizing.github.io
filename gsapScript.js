@@ -23,7 +23,7 @@ navLi.forEach((list, listIndex) => {
                     y: -50,
                     opacity: 0,
                     duration: 1,
-                    stagger: .3,
+                    stagger: .1,
                     ease: "power1.Out"
                 })
             }
