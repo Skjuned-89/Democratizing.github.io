@@ -47,12 +47,6 @@ nav ul li {
 nav ul li i {
     font-size: 10px;
 }
-nav .logo img:nth-child(1) {
-    width: 160px;
-}
-nav .logo img:nth-child(2) {
-    display: none;
-}
 nav .navButton {
     display: flex;
     justify-content: center;
@@ -842,8 +836,9 @@ header .headerCards .container {
 }
 .clientMain .swiper1,
 .clientMain .swiper2 {
-    max-width: 1200px;
+    max-width: 1400px;
     overflow: hidden;
+    margin: auto;
     margin-bottom: 50px;
 }
 .swiper1 .swiper-wrapper,
@@ -1163,4 +1158,107 @@ header .headerCards .container {
 }
 .buttomInfoContent .similarImg ul li.imgactive {
     height: 200px;
+}
+footer hr{
+    background-color: #555;
+}
+.homeAbroadFooter .container ul,.exploreMortageFooter ul,.mbaFooter ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.homeAbroadFooter .container ul li,.exploreMortageFooter ul li,.mbaFooter ul li{
+    width: calc(100% / 4);
+    margin: 100px 0;
+    h3{
+        font-size: 17px;
+        color: #555;
+        font-weight: 700;
+        line-height: 28px;
+    }
+}
+.exploreMortageFooter ul li .footerItems{
+    margin-top: 0px;
+}
+.homeAbroadFooter .container ul li:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    >img{
+        width: 80%;
+    }
+    span{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    h3{
+        font-size: 16px;
+        font-weight: 700;
+        color: #555;
+        margin-top: 40px;
+    }
+}
+.socialGroup{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.socialGroup img{
+    width: 40px;
+    mix-blend-mode: color-burn;
+}
+.footerItems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.footerItems span{
+    font-size: 16;
+    line-height: 24px;
+    color: #555;
+    width: fit-content;
+}
+.footerItems span:hover{
+    color:black;
+    text-decoration: underline;
+}
+.mbaFooter ul li:nth-child(1) .images{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.mbaFooter ul li:nth-child(1) .images img:nth-child(1){
+    width: 20%;
+    aspect-ratio: 5/1;
+}
+.mbaFooter ul li:nth-child(1) .images img:nth-child(2){
+    width: 40%;
+    aspect-ratio:16/9;
+}
+.mbaFooter ul li:nth-child(1) h4{
+    width: 60%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #555;
+    margin-left: 30%;
+}
+.copyrightFooter{
+    background-color: #F3F7FA;
+    padding: 50px 0;
+}
+.copyrightFooter .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #7b7b7b;
+}
+.copyrightFooter .container p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.copyrightFooter .container p span{
+    text-decoration: underline;
 }
