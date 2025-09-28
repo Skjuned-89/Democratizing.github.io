@@ -1,3 +1,4 @@
+
 let heroCards = document.querySelectorAll(".heroCards .heroCard")
 const order = ["heroLeft", "heroCenter", "heroRight", "heroBack"]
 function setOrder(order) {
@@ -9,6 +10,44 @@ function setOrder(order) {
   })
 }
 setOrder(order)
+let smCards = document.querySelectorAll(".smHeadCard")
+let smHeadContents = document.querySelectorAll(".smHeadCardContent")
+smCards.forEach((card, cardIndex) => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("active")
+    smHeadContents.forEach((cardCont, cardContIndex) => {
+      if (cardIndex == cardContIndex) {
+        cardCont.classList.toggle("active")
+      }
+    })
+    smHeadContents.forEach((cardCont, cardContIndex) => {
+      if (cardIndex != cardContIndex) {
+        cardCont.classList.remove("active")
+      }
+    })
+    smCards.forEach(i => {
+      if (i != card) {
+        i.classList.remove("active")
+      }
+    })
+  })
+})
+let open = document.querySelector(".open")
+let close = document.querySelector(".close")
+let smNavContent = document.querySelector(".smallScreenNav .navContent")
+smNavContent.style.display = "none"
+open.style.display = "block"
+close.style.display = "none"
+open.addEventListener("click", () => {
+  close.style.display = "block"
+  open.style.display = "none"
+  smNavContent.style.display = "block"
+})
+close.addEventListener("click", () => {
+  open.style.display = "block"
+  close.style.display = "none"
+  smNavContent.style.display = "none"
+})
 let prev = document.querySelector(".heroPrev")
 let next = document.querySelector(".heroNext")
 next.addEventListener("click", () => {
