@@ -191,6 +191,9 @@
     }
     .topInfoContent .topRightInfoContent {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
     .buttomInfoContent {
         flex-wrap: wrap;
@@ -209,6 +212,15 @@
     .buttomInfoContent .similarImg ul li.imgactive{
         height: 100%;
     } 
+    .homeAbroadFooter .container ul,.exploreMortageFooter ul,.mbaFooter .container ul {
+        flex-direction: column;
+        margin: 50px 0;
+        gap: 10px;
+    }
+    .homeAbroadFooter .container ul li, .exploreMortageFooter ul li, .mbaFooter ul li{
+        margin: 10px 0px;
+        width: 100%;
+    }
 }
 @media screen and (width>=576px) {
     .container {
