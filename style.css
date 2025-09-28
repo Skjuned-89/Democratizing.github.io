@@ -194,14 +194,13 @@ header .headerCards .container {
 .smallScreenNav{
     overflow-y: auto;
     width: 100%;
-    padding: 10px;
     position: relative;
     z-index:1000;
 }
 .smallScreenNav nav{
     width: 100%;
     height: 100%;
-    padding:20px;
+    padding:15px;
 }
 .smallScreenNav nav img{
     width: 50px;
