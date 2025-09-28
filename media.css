@@ -10,14 +10,7 @@
         margin-inline: auto;
         padding: 0px 15px;
     }
-    header nav .logo img:nth-child(1) {
-        display: none;
-    }
-    header nav .logo img:nth-child(2) {
-        width: 30px;
-        display: block;
-    }
-    nav ul {
+    .largeScreenNav{
         display: none;
     }
     .menu {
@@ -223,14 +216,7 @@
         margin-inline: auto;
         padding: 0px 10px;
     }
-    header nav .logo img:nth-child(1) {
-        display: none;
-    }
-    header nav .logo img:nth-child(2) {
-        width: 50px;
-        display: block;
-    }
-    nav ul {
+    .largeScreenNav{
         display: none;
     }
     .menu {
@@ -312,12 +298,24 @@
     }
     .topInfoContent .topRightInfoContent {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
     .buttomInfoContent {
         flex-wrap: wrap;
         gap: 15px;
     }
     .buttomInfoContent .imageSection {
+        width: 100%;
+    }
+    .homeAbroadFooter .container ul,.exploreMortageFooter ul,.mbaFooter .container ul {
+        flex-direction: column;
+        margin: 50px 0;
+        gap: 10px;
+    }
+    .homeAbroadFooter .container ul li, .exploreMortageFooter ul li, .mbaFooter ul li{
+        margin: 10px 0px;
         width: 100%;
     }
 }
@@ -346,16 +344,28 @@
         width: 100%;
         height: 300px;
     }
+    .homeAbroadFooter .container ul,.exploreMortageFooter ul,.mbaFooter .container ul {
+        flex-direction: row;
+        margin: 50px 0;
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+    .homeAbroadFooter .container ul li, .exploreMortageFooter ul li, .mbaFooter ul li{
+        margin: 50px 0px;
+        width: calc(100% / 2);
+    }
 }
-
 @media screen and (width>=1024px) {
     .container {
         width: 1024px;
         margin-inline: auto;
         padding: 0px 20px;
     }
-    nav ul {
-        display: flex;
+    .largeScreenNav{
+        display: block;
+    }
+    .smallScreenNav{
+        display: none;
     }
     .menu {
         display: none;
@@ -437,6 +447,15 @@
     }
     .buttomInfoContent .imageSection {
         width: 49%;
+    }
+    .homeAbroadFooter .container ul,.exploreMortageFooter ul,.mbaFooter .container ul {
+        flex-direction: row;
+        margin: 50px 0;
+        gap: 0px;
+    }
+    .homeAbroadFooter .container ul li, .exploreMortageFooter ul li, .mbaFooter ul li{
+        margin: 100px 0px;
+        width: calc(100% / 4);
     }
 }
 @media screen and (width>=1200px) {
